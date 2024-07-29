@@ -6,18 +6,16 @@ const fileName = "recipes.json";
 
 // GET ALL RECIPES
 export async function getRecipes(fileName) {
-//     try {
-//         const data = await readFile(fileName, 'utf-8');
-//         console.log(data);
-//     } catch (error) {
-//         console.error('Error reading file:', error);
-//     }
-// }
-
-// console.log(getRecipes(fileName));
-
-// export async function getQuotes() {
-//     return fileName;
+  //     try {
+  //         const data = await readFile(fileName, 'utf-8');
+  //         console.log(data);
+  //     } catch (error) {
+  //         console.error('Error reading file:', error);
+  //     }
+  // }
+  // console.log(getRecipes(fileName));
+  // export async function getQuotes() {
+  //     return fileName;
 }
 
 // GET A RECIPE BY ID

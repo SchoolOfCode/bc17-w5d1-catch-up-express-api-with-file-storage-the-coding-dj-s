@@ -25,3 +25,24 @@ app.get("/api/recipes", (req, res) => {
   // 
   res.status(200).json({ "success": true, "payload": "recipe array", recipes})
 })
+
+//GET request w/ ID
+
+app.get("/api/recipes/:id", (req, res) => {
+  // 
+  res.status(200).json({ "success": true, "payload": "recipe array", recipes})
+})
+
+//POST	/api/recipes	{ body }	create a new recipe	{ success: Boolean, payload: recipe }
+
+app.post("api/recipes", (req, res) => {
+  const newRecipe = req.body.newRecipe
+  const recipe = {
+    ...newRecipe, 
+    date: Date.now()
+  }
+
+  recipes.push(recipe);
+  res.status(200).json({ "success": true, "payload": "recipe array", recipes})
+  console.log(recipes);
+})
