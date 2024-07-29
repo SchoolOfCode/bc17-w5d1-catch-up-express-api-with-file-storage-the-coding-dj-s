@@ -1,5 +1,5 @@
 import express from "express";
-
+import recipes from "./recipes.json" with { type: "json"}
 import {
   getRecipes,
   getRecipeByID,
@@ -23,5 +23,5 @@ app.listen(PORT, () => {
 // sends a GET request to the server to grab all data
 app.get("/api/recipes", (req, res) => {
   // 
-  res.status(200).json({ "success": true, "payload": "recipe array"})
+  res.status(200).json({ "success": true, "payload": "recipe array", recipes})
 })
