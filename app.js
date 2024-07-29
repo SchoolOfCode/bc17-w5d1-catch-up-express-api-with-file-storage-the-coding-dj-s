@@ -17,3 +17,11 @@ app.use(express.json());
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
+// GET handler
+
+// sends a GET request to the server to grab all data
+app.get("/api/recipes", (req, res) => {
+  // 
+  res.status(200).json({ "success": true, "payload": "recipe array"})
+})
