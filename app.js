@@ -4,18 +4,18 @@ import {
   getRecipes,
   getRecipeByID,
   createRecipe,
-              updateRecipeByID,
+                    updateRecipeByID,
   deleteRecipeByID,
 } from "./recipes.js";
 
-const app = express();
+const         app = express();
 const PORT = 3000;
 
 app.use(express.static("public"));
-app.use(express.json());
+app.use(express.json())    ;
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+   app.listen(PORT,    ()   => {
+       console.log(`Server listening on port ${PORT}`);
 });
 
 // GET handler
