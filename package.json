@@ -16,10 +16,10 @@
   }
 },
 "lint-staged": {
-  "*.js": [
-    "eslint --fix",
-    "prettier --write"
-  ]
+    "*.{js}": [
+      "prettier --write",
+      "eslint --max-warnings 0 ."
+    ]
 },
   "keywords": [],
   "author": "Chris Meah <chris@schoolofcode.co.uk>",
