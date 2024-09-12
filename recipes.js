@@ -9,7 +9,7 @@ const recipes = await fs.readFile(fileName, "utf-8")
 return recipes
 }
 //chatgpt suggestion
-getRecipes().then(recipes => console.log(recipes)).catch(error => console.error(error));
+// getRecipes().then(recipes => console.log(recipes)).catch(error => console.error(error));
 // GET A RECIPE BY ID
 export async function getRecipeByID(id) {}
 

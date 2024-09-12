@@ -40,7 +40,6 @@ app.post("/api/recipes", (req, res) => {
 
   recipes.push(newRecipe);
   res.status(200).json({ "success": true, "payload": "recipe array", recipes})
-  console.log(recipes);
 })
 
 // PATCH	/api/recipes/:id	{ body }	updated recipe	{ success: Boolean, payload: recipe }
